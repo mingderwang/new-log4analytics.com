@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  blog:
+    build: .
+    labels:
+      - "traefik.backend=blog"
+      - "traefik.port=80"
+      - "traefik.frontend.rule=Host:blog.bimap.co"
+    networks:
+      - web
+    ports:
+      - "80:80"
+
+networks:
+  web:
+    external: true
