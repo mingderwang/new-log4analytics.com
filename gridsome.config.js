@@ -8,7 +8,7 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 
 module.exports = {
-  siteName: `Bimap Blog`,
+  siteName: `Log4analytics.com`,
   titleTemplate: `%s - ELK`,
   css: {
     loaderOptions: {
@@ -23,7 +23,7 @@ module.exports = {
       options: {
         path: 'blog/*.md',
         typeName: 'BlogPost',
-        route: '/:slug'
+        route: '/:slug/index.html/'
       }
     }
   ]

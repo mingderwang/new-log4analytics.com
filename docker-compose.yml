@@ -7,7 +7,7 @@ services:
     labels:
       - "traefik.backend=blog"
       - "traefik.port=80"
-      - "traefik.frontend.rule=Host:blog.bimap.co"
+      - "traefik.frontend.rule=Host:log4analytics.com"
     networks:
       - web
     ports:
